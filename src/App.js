@@ -6,12 +6,18 @@ import Main from './components/Main';
 
 
 function App() {
+
+  const buttonOneProps = {color: "blue", text: "Four"}
+
+
   return (
     <div className="App">
      <Header/>
      <Main/>
      <Footer/>
-     <Button/>
+     <Button {...buttonOneProps}>Cheese</Button>
+     <Button color="red" text="two" />
+     <Button color="green" text="three" />
     </div>
   );
 }

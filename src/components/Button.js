@@ -1,10 +1,15 @@
-function Button(){
+function Button(props){
+    console.log(props)
     return <button className="button" style={{
-        backgroundColor: "blue",
+        backgroundColor: props.color,
         padding: "10px",
-        color: "white"
+        color: "white",
+        fontSize: "1.5em",
+        fontWeight: "900",
+        borderRadius: "30px",
+        border: "none"
         }}>
-        Button
+        {props.children}
         </button>
 }
 export default Button
