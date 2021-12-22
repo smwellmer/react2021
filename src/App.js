@@ -4,6 +4,7 @@ import ColorSwitcher from './components/ColorSwitcher';
 import Counter from './components/Counter';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Iterate from './components/Iterate';
 import Main from './components/Main';
 
 
@@ -13,14 +14,15 @@ function App() {
 
   return (
     <div className="App">
-     <Header/>
+     {/* <Header/>
      <Main/>
      <Footer/>
      <Button {...buttonOneProps}>Cheese</Button>
      <Button color="red" text="two" />
      <Button color="green" text="three" />
      <ColorSwitcher/>
-     <Counter/>
+     <Counter/> */}
+     <Iterate/>
     </div>
   );
 }
